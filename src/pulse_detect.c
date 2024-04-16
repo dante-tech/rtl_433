@@ -85,7 +85,8 @@ void pulse_detect_set_levels(pulse_detect_t *pulse_detect, int use_mag_est, floa
         pulse_detect->ook_high_low_ratio = DB_TO_AMP_F(high_low_ratio);
     }
     pulse_detect->verbosity = verbosity;
-
+    
+    // Debugging output
     //fprintf(stderr, "fixed_high_level %.1f (%d), min_high_level %.1f (%d), high_low_ratio %.1f (%d)\n",
     //        fixed_high_level, pulse_detect->ook_fixed_high_level,
     //        min_high_level, pulse_detect->ook_min_high_level,
